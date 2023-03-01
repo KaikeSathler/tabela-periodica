@@ -1,0 +1,144 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	margin: auto;
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: x-large;
+	justify-content: center;
+}
+
+td:has(.elemento-periodo):has(.nome_elemento) {
+    border: 1px solid #dd0404;
+	border-radius: 2px;
+}
+
+td:not(:has(.nome_elemento)) {
+  user-select: none;
+}
+
+.elemento-periodo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	width: 3.4em;
+}
+
+.nome_elemento {
+	font-weight: bolder;
+}
+
+@media screen and (max-width: 1280px) {
+	/* table {
+		width: 1300px!important;
+	} */
+
+	td {
+		height: 0 !important;
+	}
+}
+
+.wrapper {
+	display: grid;
+	gap: 12px;
+  	grid-template-columns: repeat(18, 1fr);
+}
+
+.ametais {
+	border-color: #314707 !important;
+}
+
+.semimetais {
+	border-color: #063f39 !important;
+}
+
+.outros-metais {
+
+ 	border-color: #06333f !important;
+}
+
+.halogenios {
+	border-color: #0d2a35 !important;
+}
+
+.gases-nobres {
+	border-color: #09263b !important;
+}
+
+.metais-alcalinos {
+	border-color: #423e03 !important;
+}
+
+.metais-transiçao {
+	border-color: #361313 !important;
+}
+
+.actinidios {
+	border-color: #3b1436 !important;
+}
+
+.lantanideos {
+	border-color: #103c3f !important;
+}
+
+td:hover {
+	transform: scale(1.1);
+}
+
+td {
+	transition: all 230ms ease-in;
+}
